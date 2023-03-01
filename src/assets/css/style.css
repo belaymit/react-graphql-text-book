@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
 body {
   background-color: #f6f7f9;
   margin: 0;
@@ -42,4 +43,22 @@ p {
   margin: 5px;
   padding: 5px;
   min-height: 50px;
+}
+form {
+  padding-bottom: 20px;
+}
+form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-color: #bbb;
+}
+
+form [type="submit"] {
+  border: none;
+  background-color: #6ca6fd;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  float: right;
 }
