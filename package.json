@@ -6,18 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "webpack serve --devtool inline-source-map --hot --config webpack.client.config.js",
-    "client:build": "webpack --config webpack.client.build.config.js"
+    "client:build": "webpack --config webpack.client.build.config.js",
+    "server": "nodemon --exec babel-node --watch src/server src/server/index.js"
   },
   "author": "Belay Birhanu",
   "license": "MIT",
   "dependencies": {
     "babel-loader": "^9.1.2",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
+    "@babel/node": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "bable-loader": "^0.0.1-security",
